@@ -14,8 +14,8 @@ function makeMagic(event) {
     const delay = Number(delayRef.value);
     const step = Number(stepRef.value);
     createPromise(amountRef, delay + step * i)
-      .then(result => consol.log(result))
-      .catch(rej => console.log(rej));
+      .then(result => result)
+      .catch(rej => rej);
   }
 }
 
